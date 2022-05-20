@@ -44,7 +44,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
         time.sleep(20)
 
         try:
-            driver.find_element_by_css_selector('[class="SVGInline-svg modal_closeIcon-svg"]').click() #clicking to the X.
+            driver.find_element_by_css_selector('[alt="Close"]').click() #clicking to the X.
             print(' x out worked')
         except NoSuchElementException:
             print(' x out failed')
